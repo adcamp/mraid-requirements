@@ -152,7 +152,7 @@ mraid.resize();
 #### mraid.setOrientationProperties(allowOrientationChange : bool, forceOrientation : str)
 Назначает параметры смены ориентации объекта
 
-#### mraid.setOrientationProperties({x : int, y : int, widt h: int, height : int})
+#### mraid.setOrientationProperties({x : int, y : int, width : int, height : int})
 Назначает параметры для смены размера креатива
 
 #### mraid.addEventListener(event, handler)
