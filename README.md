@@ -168,3 +168,6 @@ mraid.resize();
 
 #### mraid.useCustomClose(bool)
 Если в шаблоне объявлен mraid.useCustomClose(true), то крестик показан не будет, однако область скрытия останется в правом верхнем углу.
+
+## <a name="examples"></a> Примеры креативов
+Примеры креативов доступны в папке [examples](https://github.com/adcamp/mraid-requirements/tree/master/examples)
