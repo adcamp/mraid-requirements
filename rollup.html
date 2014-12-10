@@ -1,0 +1,57 @@
+<style type="text/css">
+  .my_creative {
+    position: relative;
+  }
+
+  .my_creative__collapsed {
+    background: red;
+    width: 320px;
+    height: 50px;
+  }
+
+  .my_creative__expanded {
+    background: green;
+    display:none;
+    position: absolute;
+    margin: auto;
+    top:0;left:0;right:0;bottom:0;
+  }
+</style>
+
+<div class="my_creative">
+
+    <div id="crCollapsed" class="my_creative__collapsed" onclick="mraid.expand()">
+        <canvas id="animate_advert" width="320" height="50"></canvas>
+    </div>
+  
+    <div id="crExpanded" class="my_creative__expanded adc_clickarea">
+        <canvas id="animate_advert_full" width="768" height="1024"></canvas>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function myCreative() {
+    
+        var $crCollapsed = document.getElementById('crCollapsed'),
+            $crExpanded  = document.getElementById('crExpanded');
+    
+        mraid.addEventListener('stateChange', function() {
+            if(mraid.getState() === 'expanded') {
+                $crCollapsed.style.display = 'none';
+                $crExpanded.style.display = 'block';
+            } else if(mraid.getState() === 'default') {
+                $crCollapsed.style.display = 'block';
+                $crExpanded.style.display = 'none';
+            }
+        });
+          
+    };
+    
+    mraid.addEventListener('ready', function(){
+        myCreative();
+    });
+
+</script>
+  
+  
