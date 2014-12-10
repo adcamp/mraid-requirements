@@ -24,7 +24,7 @@
   - mraid.close()
   - mraid.destroy()
   - mraid.useCustomClose()
-
+- [Примеры баннеров](#examples)
 
 
 ***
@@ -168,4 +168,3 @@ mraid.resize();
 
 #### mraid.useCustomClose(bool)
 Если в шаблоне объявлен mraid.useCustomClose(true), то крестик показан не будет, однако область скрытия останется в правом верхнем углу.
-
