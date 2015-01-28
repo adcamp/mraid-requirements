@@ -56,9 +56,10 @@ document.body.getElementById('custom_creative').append(script);
 Если креатив планируется использовать для нескольких SDK, необходимо проверять наличие методов свойственных мобильным приложениям. Это касается и поддержки HTML5:
 ```
 function canvasSupport(){
-  return !!document.createElement('canvas').getContext; };
-  if(!canvasSupport()){
-    var fallback = document.getElementById('fallback'); fallback.src = imagePath + 'backup.jpg';
+  return !!document.createElement('canvas').getContext; 
+};
+if(!canvasSupport()){
+  var fallback = document.getElementById('fallback'); fallback.src = imagePath + 'backup.jpg';
   return;
 };
 ```
